@@ -1,0 +1,85 @@
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url(./Images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+    gap: 5px;
+    background-color: rgb(224, 224, 224);
+    border: 10px solid rgb(224, 224, 224);
+    grid-template-columns: auto auto auto auto;
+    box-shadow: 0 0 10px black;
+}
+
+.game-board > div {
+    color: white;
+    height: 100px;
+    background-image: url(./Images/question_mark.png);
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: 0.3s;
+}
+
+.game-board > div:hover {
+    border: 3px solid rgb(77, 208, 255);
+}
+
+button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 3px solid aqua;
+    outline: none;
+    background-color: rgb(5, 239, 239);
+    font-size: 1.1rem;
+    font-family: lato, 'sans-serif';
+}
+
+button:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.timer p {
+    font-family: lato, 'sans-serif';
+    font-size: 1.5rem;
+    margin: 0;
+    color: aqua;
+}
+
+.timer i {
+    padding-right: 10px;
+    margin: 0;
+}
